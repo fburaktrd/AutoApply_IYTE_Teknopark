@@ -47,7 +47,7 @@ def filterCompany(companies,keywords) -> list:
                     
                 filteredCompanies.append(company)
             
-                continue #If one user profession is in company's profession that's sufficient.
+                
     
     return filteredCompanies
 
