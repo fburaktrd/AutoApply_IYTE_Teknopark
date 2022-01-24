@@ -28,11 +28,9 @@ def filterCompany(companies,keywords) -> list:
                 try:
                     url = company["informations"]["web"]
                     
-                    if not url.startswith("https://"):
-                        
-                        if not url.startswith("http"):
+                    if not url.startswith("http"):
                             
-                            url = f"https://{url}"
+                        url = f"https://{url}"
 
                     
                     requests.get(url,headers=headers)
